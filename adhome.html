@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo">
+                <h2>CADMISSION</h2>
+            </div>
+            <ul>
+                <li><a href="#" onclick="showSection('dashboard')">Dashboard</a></li>
+                <li><a href="#" onclick="showSection('students')">Students</a></li>
+                <li><a href="#" onclick="showSection('transcription')">Transcription</a></li>
+                <li><a href="#" onclick="showSection('account-management')">Account Management</a></li>
+            </ul>
+        </div>
+        <div class="main-content" id="main-content">
+            <div class="header">
+                <h1>Welcome, Mr. Juan P. Dela Cruz!</h1>
+                <button class="logout">Log out</button>
+            </div>
+            <div class="content" id="dashboard">
+                <div class="cards">
+                    <div class="card">
+                        <h3>Sign In Frequency</h3>
+                        <img src="your_chart_image_url_here" alt="Sign In Frequency">
+                    </div>
+                    <div class="card">
+                        <h3>College Admission Applicants</h3>
+                        <img src="your_pie_chart_image_url_here" alt="College Admission Applicants">
+                    </div>
+                </div>
+                <div class="interview-history">
+                    <h2>Interview History</h2>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search">
+                        <div class="filters">
+                            <button>Course</button>
+                            <button>Year</button>
+                        </div>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Course</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maxyne Nuela Ignacio</td>
+                                <td>BS Computer Science</td>
+                                <td>4/7/2024</td>
+                            </tr>
+                            <tr>
+                                <td>Marivient Alexia R. Yurag</td>
+                                <td>BS Information Technology</td>
+                                <td>4/8/2024</td>
+                            </tr>
+                            <tr>
+                                <td>Byron R. Matuto</td>
+                                <td>BS Information Technology</td>
+                                <td>4/10/2024</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="content" id="transcription" style="display: none;">
+                <div class="transcription-header">
+                    <button class="back-button" onclick="showSection('dashboard')">Back</button>
+                    <h2>Transcription</h2>
+                </div>
+                <div class="transcription-content">
+                    <img src="path_to_your_image_here" alt="Transcription" class="transcription-image">
+                    <div class="transcription-text">
+                        <h3>Interview</h3>
+                        <p><strong>Interviewer:</strong> Good morning! Thank you for coming in for your admission interview today.</p>
+                        <p><strong>Applicant:</strong> Morning. Thanks for having me.</p>
+                        <p><strong>Interviewer:</strong> Let's start with a simple question. Why are you interested in studying computer science?</p>
+                        <p><strong>Applicant:</strong> Computers have captivated my interest from a young age, evoking a profound fascination within me...</p>
+                        <!-- More content here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.main-content .content').forEach(function(content) {
+                content.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>

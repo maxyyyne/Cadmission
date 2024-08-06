@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadmission</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/logo.png" type="image/x-icon"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+</head>
+
+<body>
+    <header id="home">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="img/logo.png" alt="Logo">
+                </div>
+                <div class="flex-container">
+                    <ul class="nav-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#programs">Programs</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <a href="signin.html">
+                        <button class="sign-in-btn">Sign In</button>
+                    </a>
+                    <div class="hamburger" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+            <div class="hero">
+                <div class="hero-image">
+                    <img src="img/home.png" alt="Hero Image">
+                </div>
+                <div class="hero-text">
+                    <h1>
+                        Interview <span class="highlight">Transcripts</span><br>
+                        Your <span class="highlight">Admission</span> Edge
+                    </h1>
+                    <p>Analyzing college interview transcriptions using sentiment analysis can reveal insightful
+                        patterns in applicants' emotions and attitudes, potentially influencing admission decisions.</p>
+                    <button class="cta-btn">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="features">
+        <div class="features-section">
+            <div class="feature-section">
+                <div class="feature-box">
+                  <div class="feature-content">
+                    <div class="icon-box">
+                      <img src="img/feature-learn.png" alt="Learn the Latest Skills Icon" class="feature-icon">
+                    </div>
+                    <div class="text-box">
+                      <h3>Learn the Latest Skills</h3>
+                      <p>Learn the latest skills with our cutting-edge programs designed to keep you ahead in the ever-evolving world of technology.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="feature-box">
+                  <div class="feature-content">
+                    <div class="icon-box">
+                      <img src="img/feature-career.png" alt="Get Ready For a Career Icon" class="feature-icon">
+                    </div>
+                    <div class="text-box">
+                      <h3>Get Ready For a Career</h3>
+                      <p>Get ready for a career in technology with our comprehensive and industry-focused programs.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="feature-box">
+                  <div class="feature-content">
+                    <div class="icon-box">
+                      <img src="img/feature-diploma.png" alt="Earn a Diploma Icon" class="feature-icon">
+                    </div>
+                    <div class="text-box">
+                      <h3>Earn a Diploma</h3>
+                      <p>Earn a diploma that equips you with the skills and knowledge needed for success in the technology industry.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>              
+    </section>
+    <section class="programs" id="programs">
+        <div class="container">
+            <h2>Our Degree Programs</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing.</p>
+            <div class="program-cards">
+                <div class="program-card" data-program="bscs">
+                    <img src="img/program-bscs.jpg" alt="Program 1">
+                    <div class="card-content">
+                        <h5>Bachelor of Science in Computer Science</h5>
+                        <p>LSPU - College of Computer Studies</p>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+                </div>
+                <div class="program-card" data-program="bsit">
+                    <img src="img/program-bsit.jpg" alt="Program 2">
+                    <div class="card-content">
+                        <h5>Bachelor of Science in Information Technology</h5>
+                        <p>LSPU - College of Computer Studies</p>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+                </div>
+                <div class="program-card" data-program="msit">
+                    <img src="img/program-msit.jpg" alt="Program 3">
+                    <div class="card-content">
+                        <h5>Masters in Information Technology</h5>
+                        <p>LSPU - College of Computer Studies</p>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="program-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <img id="modal-img" src="" alt="Program Image">
+            <h5 id="modal-title"></h5>
+            <p id="modal-description"></p>
+        </div>
+    </div>        
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="img/about.png" alt="About Image">
+                </div>
+                <div class="about-text">
+                    <h2>About the College of Computer Studies</h2>
+                    <p>Welcome to the College of Computer Studies, where we offer comprehensive programs designed to prepare
+                        students for the ever-evolving field of technology. Our programs aim to provide students with the
+                        theoretical knowledge and practical skills needed to excel in various technology-related careers.The College of Computer Studies offers a Bachelor of Science in Computer Science (BSCS), a Bachelor of
+                        Science in Information Technology (BSIT), and a Masters in Information Technology (MSIT). Each program
+                        is designed to cater to different interests and career goals, ensuring that our students receive the
+                        best education tailored to their aspirations.</p>
+                    <p>With a focus on hands-on learning and real-world experience, our students have the opportunity to work on
+                        projects that solve real-world problems, gaining valuable experience and making a positive impact even
+                        before they graduate. Our faculty are industry experts who bring their knowledge and experience into the
+                        classroom, providing students with insights into the latest trends and technologies.Join us at the College of Computer Studies and take the first step towards a successful career in
+                        technology. We are committed to helping our students achieve their goals and make a difference in the
+                        world of technology.</p>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <p>Frequently Asked Questions: Your Common Inquiries.</p>
+            <div class="faq-cards">
+                <div class="faq-card">
+                    <div class="faq-image-container">
+                        <img src="img/calendar.png" alt="Expected Dates">
+                    </div>
+                    <h3>Expected Dates?</h3>
+                    <p>The expected date of release for admission results will be on June 20, 2024. Further details will be communicated through the official SOCS organization page and via email. Please ensure you check these official sources regularly and be cautious of any misinformation.</p>
+                    <button class="faq-btn">For more questions ask us through: <img src="img/facebook.png" alt="Facebook"></button>
+                </div>
+                <div class="faq-card">
+                    <div class="faq-image-container">
+                        <img src="img/question.png" alt="Where to Find">
+                    </div>
+                    <h3>Where to Find/Wait?</h3>
+                    <p>To check the admission results, please visit the LSPU portal. Further details will be communicated through the SOCS organization page and via email. Please ensure you check these official sources regularly and be cautious of any misinformation.</p>
+                    <button class="faq-btn">For more questions ask us through: <img src="img/facebook.png" alt="Facebook"></button>
+                </div>
+                <div class="faq-card">
+                    <div class="faq-image-container">
+                        <img src="img/announce.png" alt="Further Announcements">
+                    </div>
+                    <h3>Further Announcements</h3>
+                    <p>For further announcements, please check the group page for the SOCCS organization or your email. Beware of false information and only rely on official communications from these sources. We advise thorough comprehension of all information that will be provided.</p>
+                    <button class="faq-btn">For more questions ask us through: <img src="img/facebook.png" alt="Facebook"></button>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <section class="subscribe">
+        <div class="container">
+            <h2>Subscribe for Announcements</h2>
+            <p>Subscribe now for important announcements and updates.</p>
+            <form>
+                <input type="email" placeholder="Email Address" required>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>Cadmission</h3>
+                    <p>Analyzing college interview transcriptions using sentiment analysis can reveal insightful patterns in applicants' emotions and attitudes, potentially influencing admission decisions.</p>
+                </div>
+                <div class="footer-section links">
+                    <h3>Department</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section links">
+                    <h3>Courses</h3>
+                    <ul>
+                        <li><a href="#">Information Tech.</a></li>
+                        <li><a href="#">Computer Science</a></li>
+                        <li><a href="#">Masters</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section links">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Career</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>+63912-345-6789</li>
+                        <li>ccadmission@lspu.edu</li>
+                        <li>796+XVX, Santa Cruz, Laguna</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Cadmission All Rights Reserved, 2022</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
